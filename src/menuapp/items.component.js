@@ -8,7 +8,7 @@ and create a component called items that shows all of the menu items for a parti
 
 angular.module('Data')
 .component('items', {
-  templateUrl: 'src/shoppinglist/templates/shoppinglist.template.html',
+  templateUrl: 'src/menuapp/templates/category-detail.template.html',
   bindings: {
     items: '<'
   }

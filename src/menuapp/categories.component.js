@@ -9,7 +9,7 @@ and create component called categories that shows all available categories in th
 
 angular.module('Data')
 .component('categories', {
-  templateUrl: 'src/shoppinglist/templates/shoppinglist.template.html',
+  templateUrl: 'src/menuapp/templates/categories.template.html',
   bindings: {
     items: '<'
   }
