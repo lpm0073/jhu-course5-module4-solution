@@ -5,5 +5,5 @@
 
 //angular.module('ShoppingList', ['ui.router', 'Spinner']);
 angular.module('MenuApp', ['ui.router', 'Spinner', 'Data']);
-
+.constant('ApiBasePath', "https://davids-restaurant.herokuapp.com");
 })();
