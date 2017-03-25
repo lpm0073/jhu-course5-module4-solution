@@ -27,47 +27,21 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     }
   })
 
-  // Items page
+  // Menu Items page
   .state('items', {
     url: '/{category}/items',
     templateUrl: 'src/menuapp/templates/items.html',
     controller: 'ItemsController as itemsCtrl',
     resolve: {
       items: ['MenuDataService', '$stateParams', function(MenuDataService, $stateParams) {
-        return MenuDataService.getItemsForCategory($stateParams.category).then(function(response) {
-          return response.data.menu_items;
-        });
-      }]
-    }
+            return MenuDataService.getItemsForCategory($stateParams.category).then(function(response) {
+              return response.data.menu_items;
+            });
+          }]
+      }
   })
 
-  // Items page
-  .state('item-detail', {
-    url: '/{category}/items/{id}',
-    templateUrl: 'src/menuapp/templates/item-detail.html',
-    controller: 'ItemController as itemCtrl',
-    resolve: {
-      items: ['MenuDataService', '$stateParams', function(MenuDataService, $stateParams) {
-        return MenuDataService.getItem($stateParams.category).then(function(response) {
-          return response.data.menu_item;
-        });
-      }]
-    }
-  })
 
-  // // Categories page
-  // .state('categories', {
-  //   url: '/categories',
-  //   templateUrl: 'src/menuapp/templates/categories.html',
-  //   controller: 'CategoriesController as categoriesCtrl',
-  //   resolve: {
-  //     categories: ['MenuDataService', function(MenuDataService) {
-  //       return MenuDataService.getAllCategories().then(function(response) {
-  //         return response.data;
-  //       });
-  //     }]
-  //   }
-  // })
 
   ;
 }

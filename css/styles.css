@@ -2,11 +2,15 @@ body {
   font-size: 1.2em;
 }
 
-.test {
-  color: blue;
-  font-weight: bold;
+.menu-items {
+  padding-bottom: 25px;
+  padding-top: 50px;
 }
 
+.categories {
+  padding-bottom: 25px;
+  padding-top: 50px;
+}
 .error {
   color: red;
   font-weight: bold;
