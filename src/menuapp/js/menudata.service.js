@@ -22,5 +22,6 @@ function MenuDataService($http) {
       params: {category: categoryShortName}
     });
   }
+
 }
 })();

@@ -2,6 +2,11 @@ body {
   font-size: 1.2em;
 }
 
+.test {
+  color: blue;
+  font-weight: bold;
+}
+
 .error {
   color: red;
   font-weight: bold;
